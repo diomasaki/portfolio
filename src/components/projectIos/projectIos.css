@@ -1,0 +1,28 @@
+.phone-container{
+    position: relative;
+    margin-right: 200px;
+}
+
+.phone-img{
+}
+
+.rk2-cont{
+    height: 567px;
+    width: 264px;
+    border-radius: 28px;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    overflow: scroll;
+}
+
+.rk2-cont::-webkit-scrollbar{
+    display: none;
+}
+
+.rk2{
+    width: 100%;
+}

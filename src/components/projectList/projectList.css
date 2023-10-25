@@ -1,0 +1,167 @@
+.ios-1{
+    padding: 50px 0px;
+    text-align: center;
+    display: flex;
+}
+
+/* LEFT */
+
+.ios-2{
+    width: 50%;
+}
+
+.ios-textBox{
+}
+
+.ios-text{
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.ios-desc{
+    font-size: 20px;
+    text-align: left;
+    margin: 0px 150px;
+    font-weight: 400;
+}
+
+.ios-list{
+    font-size: 30px;
+    margin: 40px 200px;
+    text-align: left;
+}
+
+li.list-business{
+    font-weight: 300;
+}
+
+/* LEFT */
+
+
+/* RIGHT */
+
+.arrowLeft{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    opacity: 0.3;
+    margin: auto;
+    left: 0;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrowRight{
+    cursor: pointer;
+    height: 50px;
+    color: black;
+    width: 50px;
+    border-radius: 50%;
+    opacity: 0.3;
+    margin: auto;
+    left: 0;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ios-3{
+    background-color: rgb(17, 130, 17);
+    width: 50%;
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ios-scrollMe{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    bottom: 0px;
+    left: 15px;
+    outline: none;
+    position: absolute;
+}
+
+.ios-6{
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+}
+
+.ios-7{
+    display: flex;
+    transition: all 0.2s ease;
+}
+
+/* RIGHT */
+
+
+
+@media only screen and (max-width: 1498px) {
+    .ios-desc{
+        margin: 0px 40px;
+    }
+    .ios-text{
+        line-height: 70px;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .list-business{
+        margin: 10px;
+        font-size: 22px;
+    }
+    ul{
+    }
+    .ios-list{
+        margin: 40px 20px;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .ios-1{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    
+    .ios-2{
+        width: 100%;
+    }
+
+    .ios-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .ios-scrollMe{
+        display: none;
+    }
+    .ios-desc{
+        margin: 0px 50px;
+    }
+    .ios-text{
+        line-height: 70px;
+        margin-bottom: 15px;
+    }
+    .list-business{
+        margin: 10px;
+        font-size: 16px;
+    }
+    ul{
+    }
+    .ios-list{
+        margin: 40px 20px;
+    }
+}
