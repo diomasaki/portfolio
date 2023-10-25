@@ -54,16 +54,16 @@ export const projectIos = [
   {
     id: 2,
     img: login,
-    link: "https://diomasaki.github.io/rangkopi"
+    link: "https://exterritorial-fifte.000webhostapp.com/login"
   },
   {
     id: 3,
     img: home,
-    link: "https://diomasaki.github.io/rangkopi"
+    link: "https://exterritorial-fifte.000webhostapp.com/login"
   },
   {
     id: 4,
     img: commerce,
-    link: "https://diomasaki.github.io/rangkopi"
+    link: "https://diomasaki.github.io/studious-octo-spoon"
   }
 ]
