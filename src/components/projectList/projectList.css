@@ -101,6 +101,51 @@ li.list-business{
     transition: all 0.2s ease;
 }
 
+.slideForPhone{
+    width: 100%;
+}
+
+.dotContainer{
+    display: none;
+}
+
+.dotFirst1{
+    width: 30px;
+    margin-right: 15px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.dotFirst2{
+    width: 30px;
+    margin-right: 15px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.dotFirst3{
+    width: 30px;
+    margin-right: 15px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.dotFirst4{
+    width: 30px;
+    margin-right: 15px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
 /* RIGHT */
 
 
@@ -127,6 +172,70 @@ li.list-business{
 
 
 @media screen and (max-width:480px){
+
+    /* dotSlide For Phone */
+    
+    .slideForPhone{
+        width: 100%;
+    }
+    
+    .dotContainer{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dotFirst1{
+        width: 30px;
+        margin-right: 15px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    .dotFirst2{
+        width: 30px;
+        background-color: black;
+        margin-right: 15px;
+        height: 30px;
+        border-radius: 50%;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    .dotFirst3{
+        width: 30px;
+        background-color: black;
+        margin-right: 15px;
+        height: 30px;
+        border-radius: 50%;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    .dotFirst4{
+        width: 30px;
+        background-color: black;
+        margin-right: 15px;
+        height: 30px;
+        border-radius: 50%;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+
+    /* dotSlide For Phone */
+
+
+
+
+
+
+    .arrowLeft{
+        display: none;
+    }
+
+    .arrowRight{
+        display: none;
+    }
+
     .ios-1{
         display: flex;
         gap: 30px;

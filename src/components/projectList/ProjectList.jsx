@@ -5,28 +5,34 @@ import { useRef } from "react";
 
 const ProjectList = () => {
   const right = useRef()
-  const index = 2
   let firstIndex = 1
-  
-  
+
   const nextSlide = () => {
-      right.current.style.transform = `translateX(-${firstIndex * 500}px)`
-      firstIndex++
+    if (right.current) {
+      right.current.style.transform = `translateX(-${firstIndex * 500}px)`;
+      firstIndex++;
+    }
   }
 
   const firstSlide = () => {
+    if (right.current) {
       right.current.style.transform = `translateX(0px)`
       firstIndex = 1
+    }
   }
 
   const lastSlide = () => {
+    if (right.current) {
       right.current.style.transform = `translateX(-1500px)`
       firstIndex = 4
+    }
   }
 
   const prevSlide = () => {
-    right.current.style.transform = `translateX(-${(firstIndex - 2) * 500}px)`
-    firstIndex--
+    if (right.current) {
+      right.current.style.transform = `translateX(-${(firstIndex - 2) * 500}px)`
+      firstIndex--
+    }
   }
 
   const previousClick = () => {
@@ -35,6 +41,30 @@ const ProjectList = () => {
 
   const continueClick = () => {
     firstIndex < 4 ? nextSlide() : firstSlide()
+  }
+
+  const dotSlideFirst = () => {
+    if (right.current) {
+      right.current.style.transform = `translateX(0px)`
+    }
+  }
+ 
+  const dotSlideSecond = () => {
+    if (right.current) {
+      right.current.style.transform = `translateX(-500px)`
+    }
+  }
+
+  const dotSlideThird = () => {
+    if (right.current) {
+      right.current.style.transform = `translateX(-1000px)`
+    }
+  }
+
+  const dotSlideFourth = () => {
+    if (right.current) {
+      right.current.style.transform = `translateX(-1500px)`
+    }
   }
 
 
@@ -59,10 +89,18 @@ const ProjectList = () => {
         <div className="arrowLeft" onClick={() => previousClick()}>L</div>
         <div className="ios-6">
           <h1 className="ios-scrollMe">Scroll</h1>
-          <div className="ios-7" ref={right}>
-            {projectIos.map((item) => (
-              <ProjectIos key={item.id} img={item.img} link={item.link} />
-              ))}
+          <div className="slideForPhone">
+            <div className="ios-7" ref={right}>
+              {projectIos.map((item) => (
+                <ProjectIos key={item.id} img={item.img} link={item.link} />
+                ))}
+            </div>
+            <div className="dotContainer">
+              <div className="dotFirst1" onClick={() => dotSlideFirst()}></div>
+              <div className="dotFirst2" onClick={() => dotSlideSecond()}></div>
+              <div className="dotFirst3" onClick={() => dotSlideThird()}></div>
+              <div className="dotFirst4" onClick={() => dotSlideFourth()}></div>
+            </div>
           </div>
         </div>
         <div className="arrowRight" onClick={() => continueClick()}>R</div>
